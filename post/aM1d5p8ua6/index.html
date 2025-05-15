@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>网站启用阿里云对象存储oss | 忆梦</title>
+<link rel="shortcut icon" href="https://blog.52yimen.cn/favicon.ico?v=1747321925214">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.52yimen.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="网站启用阿里云对象存储oss | 忆梦 - Atom Feed" href="https://blog.52yimen.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="#前言
+在网上看到一款插件 AliOssForTypecho
+#介绍
+对象存储oss具体是什么东西我也不清楚 先复制一段
+对象存储（Object Storage Service，OSS），也叫基于对象的存储，是一种解决和处理离散单元的方法，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.52yimen.cn">
+  <img class="avatar" src="https://blog.52yimen.cn/images/avatar.png?v=1747321925214" alt="">
+  </a>
+  <h1 class="site-title">
+    忆梦
+  </h1>
+  <p class="site-description">
+    记录日常所思
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              网站启用阿里云对象存储oss
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-24
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>#前言<br>
+在网上看到一款插件 AliOssForTypecho<br>
+#介绍<br>
+对象存储oss具体是什么东西我也不清楚 先复制一段</p>
+<p>对象存储（Object Storage Service，OSS），也叫基于对象的存储，是一种解决和处理离散单元的方法，可提供基于分布式系统之上的对象形式的数据存储服务，具有可拓展、可管理、低成本等特点，支持中心和边缘存储，能够实现存储需求的弹性伸缩，主要应用于海量数据管理的各类场景。</p>
+<p>根据我的理解它可以保存博客的附件 ，图片，等内容，相当于网盘吧，速度也不慢。,这样我就不用备份我的网页图片和附件了，直接备份数据库就OK啦</p>
+<!--more-->
+<p>#开始<br>
+插件的后台是这样的</p>
+<p><img src="https://ff2z.oss-cn-beijing.aliyuncs.com/typecho/2021/05/02/QQ.png" alt="后台" loading="lazy">#<br>
+ACCESS KEY ID<br>
+ACCESS KEY SECRET<br>
+因为是小白 都不知道是啥，然后去百度<br>
+大概是授权登录你阿里云账号的东西。<br>
+不管是啥按教程生成<br>
+ACCESS KEY ID<br>
+ACCESS KEY SECRET<br>
+填写进去就OK</p>
+<p>然而阿里云的对象oss存储后台是这样的，不管是啥一大堆东西<br>
+都不管按要求填写信息<br>
+需要先创建一个bucket 翻译过来是 桶 ，应该是存储什么东西的吧<br>
+<img src="https://ff2z.oss-cn-beijing.aliyuncs.com/typecho/2021/05/02/ls.png" alt="bucket " loading="lazy"><br>
+不管是啥直接创建 反正好像不要钱<br>
+也没说收费啥的</p>
+<p>后台是这样的<br>
+<img src="https://ff2z.oss-cn-beijing.aliyuncs.com/typecho/2021/05/02/QQ%E6%88%AA%E5%9B%BE20210502173459.png" alt="oss后台" loading="lazy"><br>
+按照要求将信息填入插件设置中<br>
+第一次测试却结果是这样的</p>
+<p><img src="https://ff2z.oss-cn-beijing.aliyuncs.com/typecho/2021/05/02/occ.png" alt="occ.png" loading="lazy"><br>
+说我没有权限啥的，研究一下发现 对象oss存储的读写权限我设置成私有 ，把它改成公共读就完成了。<br>
+以上这些图片都是在阿里云的对象oss存储里<br>
+#感想<br>
+好耶，以后都不用再备份博客中的图片了！</p>
+<p>esc结束！</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://blog.52yimen.cn/post/sxtIoSBDOt/">
+              <h3 class="post-title">
+                康奈尔笔记法
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+
+          
+            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+
+<div id="disqus_thread"></div>
+
+<script>
+
+var options = {
+  shortname: 'blog',
+  apikey: '6UxMuGbK1SOoo1Gv7IA7PJWErH74TJ0F13uICBNDJObKzVNJLyAoRym0DgQUQy60',
+}
+if ('') {
+  options.api = ''
+}
+var dsqjs = new DisqusJS(options)
+
+</script>
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://blog.52yimen.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

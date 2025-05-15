@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CloudDrive，教你把阿里云盘变本地硬盘 | 忆梦</title>
+<link rel="shortcut icon" href="https://blog.52yimen.cn/favicon.ico?v=1747321925214">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.52yimen.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="CloudDrive，教你把阿里云盘变本地硬盘 | 忆梦 - Atom Feed" href="https://blog.52yimen.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="最近有一款名叫「CloudDrive」的工具相当的火，关于它的文章铺天盖地，简单的说，就是可以把阿里云盘挂载成本地磁盘，方便同步管理的同时，还可以调用第三方的播放器或文本编辑器。
+
+而且，不少文章中称这是吾爱破解论坛上大神开发的，一度登上了..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.52yimen.cn">
+  <img class="avatar" src="https://blog.52yimen.cn/images/avatar.png?v=1747321925214" alt="">
+  </a>
+  <h1 class="site-title">
+    忆梦
+  </h1>
+  <p class="site-description">
+    记录日常所思
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              CloudDrive，教你把阿里云盘变本地硬盘
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-08-24
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://blog.52yimen.cn/post-images/2.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>最近有一款名叫「CloudDrive」的工具相当的火，关于它的文章铺天盖地，简单的说，就是可以把阿里云盘挂载成本地磁盘，方便同步管理的同时，还可以调用第三方的播放器或文本编辑器。</p>
+<!-- more -->
+<p>而且，不少文章中称这是吾爱破解论坛上大神开发的，一度登上了 52 的热榜。</p>
+<p>现在小资存储空间有了，资源也有了，但在线看片的时候那个阿里云盘自带的播放器属实不给力，如果能调用第三方播放器，那观影体验肯定会有相当大的提升。</p>
+<p>顺藤摸瓜，去 52 上搜了搜，找到了这篇文章，也给大家分享出来</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.52yimen.cn/post-images/1737697583934.png" alt="" loading="lazy"></figure>
+<p>咱一起来看看这个软件能实现什么效果。</p>
+<p>把包括阿里云盘在内的一种网盘挂载到本地，可以访问资源，可以进行删除、重命名等操作：</p>
+<p><img src="https://blog.52yimen.cn/post-images/1737697604428.png" alt="" loading="lazy"><br>
+在访问影视格式的资源时，确实可以调用第三方工具，更重要的是，加载速度非常理想，即点即开，跟本地打开体验非常接近！</p>
+<p>如果更改了文本文件里的内容，阿里云盘内的资源也都会随之改变。<br>
+<img src="https://blog.52yimen.cn/post-images/1737697698462.png" alt="" loading="lazy"><br>
+同样的操作，115 盘也可以实现：</p>
+<p>这就是个云盘映射，但不需要你自己搭建服务，只需要一个账号密码就能方便管理多个云盘，心动不，心动的话就接着往下看。</p>
+<p>使用步骤：</p>
+<p>1.下载应用，该应用和云盘应用是互相独立的。</p>
+<p>等安装好后，桌面会多一个网页，双击打开它，浏览器会自动打开「http://localhost:9798」的端口链接。</p>
+<p>这个需要你简单注册一下，一个密码就搞定了。</p>
+<p>因为邮箱无需验证，所以发现自己的 QQ 邮箱没办法注册的时候，多半是因为被别人抢注了。</p>
+<p>2.登录账号，登录的是 clouddriver 账号，在注册成功后会跳转到登录页面。</p>
+<ol>
+<li>该应用会打开一个本地网页服务作为配置：localhost:9798</li>
+</ol>
+<p>回到后台网页，点击顶部的功能栏里的云朵，登录对应的云盘，现在支持 阿里云盘、115 盘、天翼云盘、沃家云盘和 WebDAV 五个，我们以阿里云盘为例。</p>
+<p>4.选择云盘，这里选择阿里云盘即可，会弹出登录的二维码，用 app 扫码登录即可。</p>
+<p>接下来无论你是同步琐碎文件，还是在线用第三方播放器观看电影都 OK，前面提到的操作都可以实现，这里就不多说了。</p>
+<p>5.系统设置，在网页右上角打开系统设置选项。</p>
+<p>往下拉，有一个设置需要你改一下，就是缓存存放目录，这里是唯一和你本地硬盘产生交互的地方，读取文件用的是内存，不用担心它会无缘无故产生碎垃圾。</p>
+<p>而写文件是需要缓存到本地的，尤其是上传的时候，不过上传成功后会立即删掉，特别是要是有频繁上传文件的需求，你也不想 C 盘爆红吧。</p>
+<p>注意事项：</p>
+<ol>
+<li>
+<p>挂载的盘符可自行定制，但是一定要选一个，不然没得玩。</p>
+</li>
+<li>
+<p>本地计算机打开文件夹可能会卡顿，这是正常现象，跟网络和缓存有关系。</p>
+</li>
+<li>
+<p>因为挂的是网络磁盘，所以没得网就没得用。</p>
+</li>
+<li>
+<p>可以使用本地播放器播放云盘的视频资源，目前网络带宽一般不会卡顿。（原生阿里云的播放真的不好用）</p>
+</li>
+</ol>
+<p>下载地址：</p>
+<p>关键是！！ 这玩意里面放系统镜像,而vm虚拟机中可以选择此镜像文件，也就是说镜像不用下载到本地也能用给vm虚拟机安装系统！！ 强大！<br>
+我刚安装的win11系统<br>
+<img src="https://blog.52yimen.cn/post-images/1737697744226.png" alt="" loading="lazy"><br>
+win11<br>
+win11 啊里云盘链接: https://www.aliyundrive.com/s/ZmB4U2mt1RZ</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://blog.52yimen.cn/post/jbGlt4b2ou/">
+              <h3 class="post-title">
+                 最近状态
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+
+          
+            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+
+<div id="disqus_thread"></div>
+
+<script>
+
+var options = {
+  shortname: 'blog',
+  apikey: '6UxMuGbK1SOoo1Gv7IA7PJWErH74TJ0F13uICBNDJObKzVNJLyAoRym0DgQUQy60',
+}
+if ('') {
+  options.api = ''
+}
+var dsqjs = new DisqusJS(options)
+
+</script>
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://blog.52yimen.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
